@@ -73,3 +73,35 @@ function sum(number){
 }
 
 console.log(sum(10));
+
+//Objects
+let user = {
+	name: "Amitesh",
+	age: 24,
+    gender: "male"
+}
+
+
+// Assignment #1
+// Write a function that takes a user as an input and greets them with their name and age
+
+function greet(user){
+    console.log('Hi '+user.name+'!');
+}
+greet(user);
+
+// Assignment #2
+// Write a function that takes a new object as input which has name , age  and gender and greets the user with their gender (Hi Mr/Mrs/Others harkirat, your age is 21)
+function greet2(user){
+console.log(`Hi ${user.name}.Your age is ${user.age}.Your gender is ${user.gender}.`)
+}
+
+greet2(user);
+// Assignment #3
+// Also tell the user if they are legal to vote or not
+function greet3(user){
+    console.log(`Hi ${user.name}.Your age is ${user.age}.Your gender is ${user.gender}.`);
+    console.log(`Your age to vote is ${user.age>18}`);
+    }
+    
+    greet3(user);
